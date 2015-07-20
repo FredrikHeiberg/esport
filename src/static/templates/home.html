@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="col-md-6">
+    <from method="POST" action=""> {% csrf_token %}
+        {{ form.as_p }}
+        <!-- <button type="Submit" class="btn tf-btn btn-default">Submit</button> -->
+        <input type="Submit" value="Submit" class="btn tf-btn btn-default"/>
+    </from>
+</div>
+
+{% endblock %}
+
+
+
+                          <!--  <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                </div>
+                            </div> -->
